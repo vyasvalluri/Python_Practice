@@ -21,6 +21,11 @@ parser.add_option("-m", "--mac", dest="new_mac", help="New MAC address")
 inf = options.interface
 mac = options.new_mac
 
+if not inf:
+	parser.error("[-] Please specify the interface, use --help for more info.")
+if not mac:
+	parser.error("[-] Please specify the MAC, use --help for more info ")
+
 print("entered arguments are %s , %s " % (inf,mac))
 
 

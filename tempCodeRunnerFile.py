@@ -1,0 +1,2 @@
+
+def selectRandom(li):
